@@ -12,7 +12,7 @@ fi
 
 # Customize to your needs...
 
-# $(boot2docker shellinit)
+# eval "$(docker-machine env dev2)"
 
 test -e ${HOME}/.iterm2_shell_integration.zsh && source ${HOME}/.iterm2_shell_integration.zsh
 
