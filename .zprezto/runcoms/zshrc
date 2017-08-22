@@ -14,7 +14,7 @@ fi
 
 test -e ${HOME}/.iterm2_shell_integration.zsh && source ${HOME}/.iterm2_shell_integration.zsh
 
-source /usr/local/Cellar/python/2.7.12/Frameworks/Python.framework/Versions/2.7/bin/aws_zsh_completer.sh
+[ -f /usr/local/bin/aws_zsh_completer.sh ] && . /usr/local/bin/aws_zsh_completer.sh
 
 function _ec2ssh() { ssh $(cap $1 ec2:status | tail -n 1 | cut -f 6 -d " ") }
 alias ec2ssh="_ec2ssh"
